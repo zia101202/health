@@ -9,7 +9,26 @@ export default function CTASection() {
     >
       {/* Container for main content (doctors + CTA content) */}
       <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10">
-        {/* Left doctor */}
+        
+        {/* Mobile: both doctors side by side above content */}
+        <div className="flex lg:hidden gap-4 justify-center w-full">
+          <div className="w-[140px] sm:w-[180px] aspect-[3/4] shrink-0 rounded-[20px] overflow-hidden bg-white shadow-lg">
+            <img
+              src="/p1.png"
+              alt="Physician Advisor Male"
+              className="w-full h-full object-cover select-none"
+            />
+          </div>
+          <div className="w-[140px] sm:w-[180px] aspect-[3/4] shrink-0 rounded-[20px] overflow-hidden bg-white shadow-lg">
+            <img
+              src="/p2.png"
+              alt="Physician Advisor Female"
+              className="w-full h-full object-cover select-none"
+            />
+          </div>
+        </div>
+
+        {/* Left doctor — desktop only */}
         <div className="hidden lg:block w-[280px] aspect-[3/4] shrink-0 rounded-[30px] overflow-hidden bg-white shadow-lg">
           <img
             src="/p1.png"
@@ -43,7 +62,7 @@ export default function CTASection() {
           </div>
         </div>
 
-        {/* Right doctor */}
+        {/* Right doctor — desktop only */}
         <div className="hidden lg:block w-[280px] aspect-[3/4] shrink-0 rounded-[30px] overflow-hidden bg-white shadow-lg">
           <img
             src="/p2.png"

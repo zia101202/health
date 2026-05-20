@@ -1,5 +1,4 @@
 import { PrimaryButton, GhostButton } from "./ui/buttons";
-import { ICON_PHYSICIAN, ICON_REMOTE } from "@/lib/constants";
 import Navbar from "./Navbar";
 
 export default function HeroSection() {
@@ -59,25 +58,25 @@ export default function HeroSection() {
         </div>
 
         {/* Feature Pills */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-4 sm:mt-6 w-full max-w-4xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-4 sm:mt-6 w-full max-w-4xl">
           {[
             {
-              icon: ICON_PHYSICIAN,
+              icon: "/h1.png",
               title: "Physician-led",
               desc: "Speak with licensed physician advisors with real clinical experience.",
             },
             {
-              icon: ICON_REMOTE,
+              icon: "/h2.png",
               title: "Video-based",
               desc: "Meet privately by video call from wherever your family is located",
             },
             {
-              icon: ICON_PHYSICIAN,
+              icon: "/h3.png",
               title: "Paid hourly",
               desc: "Book focused advisory time with transparent hourly pricing",
             },
             {
-              icon: ICON_REMOTE,
+              icon: "/h4.png",
               title: "Non-clinical",
               desc: "Receive education, context, and guidance without diagnosis or treatment.",
             },
@@ -93,7 +92,7 @@ export default function HeroSection() {
 
         {/* Disclaimer */}
         <div
-          className="w-full lg:w-[1044px] bg-[rgba(255,255,255,0.06)] backdrop-blur-md border border-white/10 rounded-[12px] sm:rounded-[16px] flex items-center justify-center overflow-hidden shrink-0 py-2.5 sm:py-3 px-3 sm:px-4 lg:px-[25px]"
+          className="w-full lg:w-[1094px] bg-[rgba(255,255,255,0.06)] backdrop-blur-md border border-white/10 rounded-[12px] sm:rounded-[16px] flex items-center justify-center overflow-hidden shrink-0 py-2.5 sm:py-3 px-3 sm:px-4 lg:px-[25px]"
         >
           <p
             className="text-white font-semibold text-[11px] sm:text-[13px] lg:text-[16px] font-hanken text-center w-full lg:w-[1003px] leading-snug"

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4 sm:gap-6 max-w-xs">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/navlogo.png" alt="Conzultos" className="h-8 sm:h-10 w-auto" />
+            <img src="/navlogo.png" alt="Conzultos" style={{ width: '147.5px', height: '41px' }} />
             <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
               Connecting people with trusted healthcare experts through simple, meaningful conversations.
             </p>
@@ -51,11 +51,11 @@ export default function Footer() {
                   <img src="/location.png" alt="Location" className="w-4 h-4 sm:w-5 sm:h-5 object-contain" />
                   <span>Houston, Texas</span>
                 </div>
-                <div className="flex items-center gap-3 text-white/70 text-xs sm:text-sm">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                {/* <div className="flex items-center gap-3 text-white/70 text-xs sm:text-sm">
+
                   <img src={EMAIL_ICON} alt="Email" className="w-4 h-4 sm:w-5 sm:h-5 object-contain" />
                   <span>example@gmail.com</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
