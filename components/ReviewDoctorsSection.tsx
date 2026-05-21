@@ -7,7 +7,7 @@ export default function ReviewDoctorsSection() {
         {/* Left text */}
         <div className="flex flex-col gap-6 sm:gap-8 lg:gap-[51px] w-full lg:w-[570px] justify-center">
           <div className="flex flex-col gap-4 sm:gap-6">
-            <h2 className="text-[#0a0a1a] text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-tight font-hanken">
+            <h2 className="text-[#0a0a1a] text-[28px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-tight font-hanken">
               <span className="text-[#3260ec]">Review doctors</span> by name, picture, specialty, and experience
             </h2>
             <div className="flex flex-col gap-3 sm:gap-4 text-[#444] text-sm sm:text-base leading-relaxed">

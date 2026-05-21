@@ -1,4 +1,4 @@
-import { PrimaryButton, GhostButton } from "./ui/buttons";
+import { PrimaryButton } from "./ui/buttons";
 import Navbar from "./Navbar";
 
 export default function HeroSection() {
@@ -31,34 +31,35 @@ export default function HeroSection() {
 
       <div className="flex-1 w-full max-w-[1219px] mx-auto flex flex-col items-center justify-center gap-4 sm:gap-[24px] relative z-10 px-4 sm:px-6 py-8 sm:py-12">
         {/* Badge */}
-        <div className="border border-white/10 backdrop-blur text-white text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider px-3 sm:px-5 py-1.5 sm:py-2 rounded-full">
-          FOR U.S. LICENSED PHYSICIANS
+        <div className="bg-white/10 backdrop-blur-md border border-white/30 text-white text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider px-5 py-2 rounded-full">
+          1:1 Access to Top U.S. Licensed Physicians
         </div>
 
         {/* Headline */}
         <h1
           className="text-[28px] sm:text-4xl md:text-5xl lg:text-[70px] font-semibold text-white leading-[1.15] sm:leading-[1.1] lg:leading-[75px] tracking-[-0.03em] lg:tracking-[-0.06em] text-center font-hanken w-full lg:w-[1219px]"
         >
-          When your family needs <span className="text-[#4f8fff]">medical<br className="hidden md:block" />clarity</span>, speak with a physician advisor.
+          Get expert <span className="text-[#4f8fff]">medical guidance</span>
+          <br />
+          for you and your family.
         </h1>
 
         {/* Subtext */}
         <p
-          className="text-white/80 text-[13px] sm:text-[14px] md:text-[16px] font-normal leading-[22px] sm:leading-[25px] md:leading-[27px] tracking-[0em] text-center w-full lg:w-[1057px] font-['Inter',sans-serif] px-2"
+          className="text-white font-['Inter',sans-serif] font-normal text-[16px] leading-[27px] tracking-[0] text-center w-full max-w-[767px] lg:min-h-[81px] mx-auto px-2 flex items-center justify-center"
         >
-          Conzultos Medical Family Advisory connects you with experienced physicians for non-clinical video advisory
-          sessions. Get help understanding medical information, preparing better questions, reviewing options, and making
-          more informed decisions with your family.
+          Conzultos Medical Family Advisory connects you with experienced physicians for non-clinical advisory sessions.
+          Get help understanding medical information, preparing better questions, reviewing options, and making more
+          informed decisions with your family.
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center w-full sm:w-auto">
-          <PrimaryButton>Book a Physician Advisory Call</PrimaryButton>
-          <GhostButton>View Doctors &amp; Specialties</GhostButton>
+        {/* CTA */}
+        <div className="flex justify-center w-full">
+          <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
         </div>
 
         {/* Feature Pills */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-4 sm:mt-6 w-full max-w-4xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[24px] mt-4 sm:mt-6 w-full max-w-[1097px] lg:min-h-[194px] mx-auto">
           {[
             {
               icon: "/h1.png",
@@ -85,7 +86,9 @@ export default function HeroSection() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={icon} alt={title} className="w-8 h-8 sm:w-10 sm:h-10" />
               <span className="text-white font-bold text-base sm:text-lg tracking-tight">{title}</span>
-              <p className="text-white/70 text-xs sm:text-sm leading-5">{desc}</p>
+              <p className="text-white/70 font-['Inter',sans-serif] font-normal text-[14px] leading-[20px] tracking-[0] text-center">
+                {desc}
+              </p>
             </div>
           ))}
         </div>

@@ -24,8 +24,7 @@ export default function Navbar() {
             </a>
           ))}
           <button
-            className="text-white font-semibold text-sm rounded-[60px] border border-white/30 bg-white/5 backdrop-blur-md hover:bg-white/25 transition-colors flex items-center justify-center gap-[12px]"
-            style={{ width: '125px', height: '47px', paddingTop: '14px', paddingBottom: '14px', paddingLeft: '36px', paddingRight: '36px' }}
+            className="w-[125px] h-[47px] py-[14px] px-9 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 transition-colors flex items-center justify-center shrink-0"
           >
             Sign in
           </button>
@@ -49,8 +48,7 @@ export default function Navbar() {
             </a>
           ))}
           <button
-            className="text-white font-semibold text-sm rounded-[60px] border border-white/30 bg-white/10 backdrop-blur-md hover:bg-white/25 transition-colors flex items-center justify-center gap-[12px] w-fit"
-            style={{ height: '47px', paddingTop: '14px', paddingBottom: '14px', paddingLeft: '36px', paddingRight: '36px' }}
+            className="w-[125px] h-[47px] py-[14px] px-9 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 transition-colors flex items-center justify-center shrink-0"
           >
             Sign in
           </button>

@@ -65,7 +65,7 @@ export default function DoctorsSection() {
       <div className="max-w-[1320px] mx-auto flex flex-col gap-8 sm:gap-14 relative">
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-3 sm:gap-4">
           <h2
-            className="text-[#0a0a1a] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] font-semibold font-hanken leading-tight lg:leading-[60px] text-center mx-auto"
+            className="text-[#0a0a1a] text-[31px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] font-semibold font-hanken leading-tight lg:leading-[60px] text-center mx-auto"
             style={{ letterSpacing: '-5%' }}
           >
             Connect With Top <br className="hidden sm:inline" />
