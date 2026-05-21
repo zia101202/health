@@ -8,11 +8,7 @@ export default function MissionSection() {
         <div className="relative rounded-2xl overflow-hidden w-full lg:w-[636px] lg:h-[515px] shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/mission.png" alt="Family using Conzultos" className="w-full h-full object-cover" />
-          <div className="absolute bottom-5 left-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-4">
-            <p className="text-white text-sm font-semibold text-center leading-snug tracking-tight">
-              Conzultos is designed for the moments when your family needs medical understanding, not clinical treatment.
-            </p>
-          </div>
+        
         </div>
 
         {/* Content */}
