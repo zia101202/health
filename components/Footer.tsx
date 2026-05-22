@@ -47,9 +47,6 @@ export default function Footer() {
             {/* Legal */}
             <div className="flex flex-col gap-4 min-w-[120px]">
               <p className="font-bold text-base sm:text-lg">Legal</p>
-              <Link href="/#cta" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
-                Contact Us
-              </Link>
               <Link href="/terms" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
                 Terms of Use & Privacy Policy
               </Link>
@@ -62,6 +59,9 @@ export default function Footer() {
             <div className="flex flex-col gap-4 min-w-[120px] col-span-2 lg:col-span-1">
               <p className="font-bold text-base sm:text-lg">Get in touch</p>
               <div className="flex flex-col gap-4">
+                <Link href="/#cta" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                  Contact Us
+                </Link>
                 <a href="mailto:support@conzultos.com" className="flex items-center gap-3 text-white/70 text-xs sm:text-sm hover:text-white transition-colors cursor-pointer">
                   <Image src="/emails.png" alt="Email" width={20} height={20} className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
                   <span>support@conzultos.com</span>
