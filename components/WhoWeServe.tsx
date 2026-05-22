@@ -30,7 +30,7 @@ const WHO_DATA = [
 
 export default function WhoWeServe() {
   return (
-    <section id="services" className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
+    <section id="about" className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
       <div className="w-full lg:w-[1066px] mx-auto flex flex-col gap-8 sm:gap-[42px]">
         <div className="text-center flex flex-col gap-3 sm:gap-5 max-w-4xl mx-auto">
           <h2 className="text-[#0a0a1a] text-[33px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">

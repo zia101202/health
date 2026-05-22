@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Navbar() {
@@ -10,19 +11,21 @@ export default function Navbar() {
   return (
     <nav className="relative z-50 w-full pt-4">
       <div className="max-w-[1320px] mx-auto px-6 h-[70px] flex items-center justify-between">
-        <Image src="/logo.png" alt="Conzultos" height={45} width={180} style={{ height: "45px", width: "auto" }} />
+        <Link href="/" className="cursor-pointer shrink-0">
+          <Image src="/logo.png" alt="Conzultos" height={45} width={180} style={{ height: "45px", width: "auto" }} />
+        </Link>
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
-            <a
+            <Link
               key={l}
-              href={l === "Services" ? "#services" : l === "FAQ" ? "#faq" : l === "About Us" ? "#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "#"}
+              href={l === "Home" ? "/" : l === "Services" ? "/#services" : l === "FAQ" ? "/#faq" : l === "About Us" ? "/#about" : l === "Contact Us" ? "/#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "/"}
               {...(l === "Become an Expert" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className={`text-white text-sm hover:text-[#4f8fff] transition-colors ${l === "Become an Expert" ? "font-semibold underline decoration-solid underline-offset-4" : "font-normal"
                 }`}
             >
               {l}
-            </a>
+            </Link>
           ))}
           <a
             href="https://app.conzultos.com/login"
@@ -47,14 +50,14 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden bg-[#0a0a1a] border-t border-white/10 px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
-            <a
+            <Link
               key={l}
-              href={l === "Services" ? "#services" : l === "FAQ" ? "#faq" : l === "About Us" ? "#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "#"}
+              href={l === "Home" ? "/" : l === "Services" ? "/#services" : l === "FAQ" ? "/#faq" : l === "About Us" ? "/#about" : l === "Contact Us" ? "/#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "/"}
               {...(l === "Become an Expert" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-white text-sm hover:text-[#4f8fff] transition-colors"
             >
               {l}
-            </a>
+            </Link>
           ))}
           <a
             href="https://app.conzultos.com/login"

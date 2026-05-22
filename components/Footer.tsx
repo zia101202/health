@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { OutlineButton } from "./ui/buttons";
 
 export default function Footer() {
@@ -8,7 +9,9 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-start gap-10 sm:gap-14 lg:gap-24 xl:gap-32 pb-8 sm:pb-12 border-b border-white/10">
           {/* Brand — left */}
           <div className="flex flex-col gap-4 w-full sm:max-w-[280px] shrink-0">
-            <Image src="/navlogo.png" alt="Conzultos" width={148} height={41} style={{ width: "147.5px", height: "41px" }} />
+            <Link href="/" className="cursor-pointer shrink-0">
+              <Image src="/navlogo.png" alt="Conzultos" width={148} height={41} style={{ width: "147.5px", height: "41px" }} />
+            </Link>
             <p className="text-white/70 sm:max-w-[280px] text-xs sm:text-sm leading-relaxed">
               Connecting people with trusted healthcare experts through simple, meaningful conversations.
             </p>
@@ -35,22 +38,24 @@ export default function Footer() {
             <div className="flex flex-col gap-4 min-w-[120px]">
               <p className="font-bold text-base sm:text-lg">Quick Links</p>
               {["Home", "About Us", "Services", "FAQ's"].map((l) => (
-                <a key={l} href={l === "Services" ? "#services" : l === "FAQ's" ? "#faq" : l === "About Us" ? "#cta" : "#"} className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                <Link key={l} href={l === "Home" ? "/" : l === "Services" ? "/#services" : l === "FAQ's" ? "/#faq" : l === "About Us" ? "/#about" : "/"} className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
                   {l}
-                </a>
+                </Link>
               ))}
             </div>
 
             {/* Legal */}
             <div className="flex flex-col gap-4 min-w-[120px]">
               <p className="font-bold text-base sm:text-lg">Legal</p>
-
-              <a href="/terms" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+              <Link href="/#cta" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                Contact Us
+              </Link>
+              <Link href="/terms" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
                 Terms of Use & Privacy Policy
-              </a>
-              <a href="/waiver" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+              </Link>
+              <Link href="/waiver" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
                 Waiver of Liability
-              </a>
+              </Link>
             </div>
 
             {/* Get in touch */}
