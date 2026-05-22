@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand — left */}
           <div className="flex flex-col gap-4 w-full sm:max-w-[280px] shrink-0">
             <Link href="/" className="cursor-pointer shrink-0">
-              <Image src="/navlogo.png" alt="Conzultos" width={148} height={41} style={{ width: "147.5px", height: "41px" }} />
+              <Image src="/navlogo.svg" alt="Conzultos" width={148} height={41} style={{ width: "147.5px", height: "41px" }} />
             </Link>
             <p className="text-white/70 sm:max-w-[280px] text-xs sm:text-sm leading-relaxed">
               Connecting people with trusted healthcare experts through simple, meaningful conversations.

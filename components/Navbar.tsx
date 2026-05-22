@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="relative z-50 w-full pt-4">
       <div className="max-w-[1320px] mx-auto px-6 h-[70px] flex items-center justify-between">
         <Link href="/" className="cursor-pointer shrink-0">
-          <Image src="/logo.png" alt="Conzultos" height={45} width={180} style={{ height: "45px", width: "auto" }} />
+          <Image src="/logo.svg" alt="Conzultos" height={45} width={180} style={{ height: "45px", width: "auto" }} />
         </Link>
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
