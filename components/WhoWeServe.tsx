@@ -5,25 +5,25 @@ const WHO_DATA = [
   {
     title: <>An adult child <span className="text-[#3260ec]">supporting</span><br className="hidden md:block" /> an aging parent</>,
     help: "Prepare questions, organize concerns, and feel better prepared to make medical decisions.",
-    image: "/images/1.png",
+    image: "/images/p1.svg",
     side: "right",
   },
   {
     title: <>A spouse or caregiver helping <span className="text-[#3260ec]">coordinate</span> care</>,
     help: "Medical expertise to help caregivers make every medical decision.",
-    image: "/images/2.png",
+    image: "/images/p2.svg",
     side: "left",
   },
   {
     title: <>A family facing a complex <span className="text-[#3260ec]">diagnosis</span></>,
     help: "Understand diagnosis, different treatment options and how to decide the right path.",
-    image: "/images/3.png",
+    image: "/images/p3.svg",
     side: "right",
   },
   {
     title: <>Someone preparing for a second <span className="text-[#3260ec]">opinion</span></>,
     help: "Finding the right specialist, identify concerns and questions before the appointment.",
-    image: "/images/4.png",
+    image: "/images/p4.svg",
     side: "left",
   },
 ];

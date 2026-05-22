@@ -32,7 +32,7 @@ export default function HeroSection() {
 
       <div className="flex-1 w-full max-w-[1219px] mx-auto flex flex-col items-center justify-center gap-4 sm:gap-[24px] relative z-10 px-4 sm:px-6 py-8 sm:py-12">
         {/* Badge */}
-        <div className="bg-white/10 backdrop-blur-md border border-white/30 text-white text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider px-5 py-2 rounded-full">
+        <div className="bg-black/5 backdrop-blur-md border border-white/30 text-white text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider px-5 py-2 rounded-full">
           1:1 Access to Top U.S. Licensed Physicians
         </div>
 

@@ -2,11 +2,18 @@ export default function CTASection() {
   return (
     <section id="cta"
       className="relative overflow-hidden py-14 sm:py-20 px-4 sm:px-6 md:px-[60px]"
-      style={{
-        background:
-          "radial-gradient(217% 200.16% at 8.02% 81.88%, #3260EC 31.18%, #6FE6EE 66.85%, #96FBDC 94.47%)",
-      }}
+      style={{ background: "#3260EC" }}
     >
+      {/* Subtle teal glow — top-right */}
+      <div
+        className="pointer-events-none absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full opacity-20"
+        style={{ background: "radial-gradient(circle, #6FE6EE 0%, transparent 70%)" }}
+      />
+      {/* Subtle mint glow — bottom-right */}
+      <div
+        className="pointer-events-none absolute -bottom-24 -right-8 w-[360px] h-[360px] rounded-full opacity-15"
+        style={{ background: "radial-gradient(circle, #96FBDC 0%, transparent 70%)" }}
+      />
       <div className="w-full max-w-[1320px] min-h-[382px] lg:h-[382px] mx-auto flex flex-col items-center justify-center gap-[32px] text-center">
         <h2
           className="text-white text-[31px] font-semibold font-hanken text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] leading-tight lg:leading-[60px] text-center w-full max-w-[1100px]"

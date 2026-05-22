@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const links = ["Home", "About Us", "Services", "FAQ", "Become an Expert", "Contact Us"];
+  const links = ["Home", "About Us", "Services", "FAQ", "Become An Expert", "Contact Us"];
   return (
     <nav className="relative z-50 w-full pt-4">
       <div className="max-w-[1320px] mx-auto px-6 h-[70px] flex items-center justify-between">
@@ -31,7 +31,9 @@ export default function Navbar() {
             href="https://app.conzultos.com/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-auto h-[47px] py-[14px] px-6 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center shrink-0"
+            className="flex flex-row items-center w-[125px] h-[47px] py-[14px] px-[36px] gap-3 text-white font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 shrink-0 whitespace-nowrap justify-center  backdrop-blur-lg 
+                 border border-white/20 "
+            style={{ background: "rgba(0,0,0,0.004)" }}
           >
             Sign in
           </a>
@@ -63,7 +65,8 @@ export default function Navbar() {
             href="https://app.conzultos.com/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-auto h-[47px] py-[14px] px-6 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center shrink-0"
+            className="flex text-[16px] flex-row items-center w-[125px] h-[47px] py-[14px] px-[36px] gap-3 text-white font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 shrink-0 whitespace-nowrap justify-center"
+            style={{ background: "rgba(0,0,0,0.004)" }}
           >
             Sign in
           </a>

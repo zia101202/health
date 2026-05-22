@@ -32,7 +32,7 @@ export default function ReviewDoctorsSection() {
         <div className="w-full lg:w-[603px] flex items-center justify-center mt-8 sm:mt-12 lg:mt-0">
           <div className="relative w-full aspect-[603/480] rounded-2xl overflow-hidden select-none">
             <Image
-              src="/review.png"
+              src="/review.svg"
               alt="Review doctor profile example"
               fill
               className="object-contain"

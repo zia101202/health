@@ -4,22 +4,22 @@ const HOW_STEPS = [
   {
     step: "1. Choose a physician advisor",
     desc: "Browse doctor profiles and specialties to find your perfect match.",
-    image: "/videoCall/v1.png",
+    image: "/videoCall/v1.svg",
   },
   {
     step: "2. Book a session",
     desc: "Book paid hourly advisory time based on the physician's availability and pricing.",
-    image: "/videoCall/v2.png",
+    image: "/videoCall/v2.svg",
   },
   {
     step: "3. Get in touch with your physician",
     desc: "Coordinate your call with your physician via internal messaging.",
-    image: "/videoCall/v3.png",
+    image: "/videoCall/v3.svg",
   },
   {
     step: "4. Join your session",
     desc: "Meet by video or phone call with the physician advisor for education, context, and guidance.",
-    image: "/videoCall/v4.png",
+    image: "/videoCall/v4.svg",
   },
 ];
 

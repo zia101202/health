@@ -8,29 +8,29 @@ const DOCTORS = [
   {
     name: "Sergio E. Trevino, MD, MBA",
     specialty: "Pulmonary and Critical Care Medicine",
-    image: "/expert/e1.png",
+    image: "/expert/e1.svg",
   },
   {
     name: "Timothy E. Hotze, MD",
     specialty: "Pulmonary and Critical Care Medicine",
-    image: "/expert/e2.png",
+    image: "/expert/e2.svg",
   },
   {
     name: "Pavan Thangudu, MD",
     specialty: "Critical Care Medicine",
-    image: "/expert/e3.png",
+    image: "/expert/e3.svg",
   },
   {
     name: "Tara Barto, MD",
     specialty: "Pulmonary and Critical Care Medicine",
-    image: "/expert/e4.png",
+    image: "/expert/e4.svg",
   },
 ];
 
 function DoctorCard({ name, specialty, image }: { name: string; specialty: string; image: string }) {
   return (
     <div className="w-[240px] sm:w-[280px] md:w-[315px] shrink-0 snap-start flex flex-col gap-3 sm:gap-4">
-      <div className="relative w-full aspect-square rounded-2xl overflow-hidden select-none">
+      <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden select-none">
         <Image
           src={image}
           alt={name}
@@ -97,7 +97,7 @@ export default function DoctorsSection() {
           </div>
         </div>
 
-        <div className="hidden md:flex gap-3">
+        <div className="hidden md:flex justify-center gap-3">
           <button
             onClick={() => scroll("left")}
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-black/10 hover:border-black/20 bg-white flex items-center justify-center hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-200 shadow-sm cursor-pointer"
