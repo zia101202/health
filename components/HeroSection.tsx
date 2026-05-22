@@ -56,7 +56,9 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div className="flex justify-center w-full">
-          <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer">
+            <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          </a>
         </div>
 
         {/* Feature Pills */}

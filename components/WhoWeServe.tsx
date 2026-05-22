@@ -30,7 +30,7 @@ const WHO_DATA = [
 
 export default function WhoWeServe() {
   return (
-    <section className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
+    <section id="services" className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
       <div className="w-full lg:w-[1066px] mx-auto flex flex-col gap-8 sm:gap-[42px]">
         <div className="text-center flex flex-col gap-3 sm:gap-5 max-w-4xl mx-auto">
           <h2 className="text-[#0a0a1a] text-[33px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
@@ -77,7 +77,9 @@ export default function WhoWeServe() {
         </div>
 
         <div className="flex justify-center mt-4 sm:mt-8">
-          <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer">
+            <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          </a>
         </div>
       </div>
     </section>

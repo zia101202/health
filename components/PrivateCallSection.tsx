@@ -86,7 +86,9 @@ export default function PrivateCallSection() {
 
         {/* Button */}
         <div className="relative z-10 mt-[10px]">
-          <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer">
+            <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          </a>
         </div>
 
       </div>

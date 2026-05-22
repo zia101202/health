@@ -22,7 +22,9 @@ export default function ReviewDoctorsSection() {
             </div>
           </div>
           <div>
-            <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+            <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer">
+              <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+            </a>
           </div>
         </div>
 

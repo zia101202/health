@@ -13,13 +13,20 @@ export default function Footer() {
               Connecting people with trusted healthcare experts through simple, meaningful conversations.
             </p>
             <div className="flex gap-3">
-              {["/facebook.png", "/tiktok.png", "/instagram.png", "/youtube.png"].map((src, i) => (
-                <a key={i} href="#" className="w-5 h-5 sm:w-6 sm:h-6 hover:opacity-70 transition-opacity">
+              {[
+                { src: "/facebook.png", url: "https://www.facebook.com/Conzultos?mibextid=wwXIfr&rdid=GzyOSNMedPaLtMgk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1N9zJne937%2F%3Fmibextid%3DwwXIfr#" },
+                { src: "/tiktok.png", url: "https://www.tiktok.com/@conzultos?_r=1&_t=ZP-959SCHXLgTf" },
+                { src: "/instagram.png", url: "https://www.instagram.com/conzultos.health?igsh=MTQ0am0zMjh4dmhsZg%3D%3D&utm_source=qr" },
+                { src: "/youtube.png", url: "https://www.youtube.com/@conzultos" }
+              ].map(({ src, url }, i) => (
+                <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="w-5 h-5 sm:w-6 sm:h-6 hover:opacity-80 hover:scale-110 active:scale-95 transition-all duration-200">
                   <Image src={src} alt="" width={24} height={24} className="w-full h-full object-contain" />
                 </a>
               ))}
             </div>
-            <OutlineButton className="w-full sm:w-fit">Become an Expert</OutlineButton>
+            <a href="https://www.doctors.conzultos.com/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-fit">
+              <OutlineButton className="w-full sm:w-fit">Become an Expert</OutlineButton>
+            </a>
           </div>
 
           {/* Link columns */}
@@ -28,7 +35,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4 min-w-[120px]">
               <p className="font-bold text-base sm:text-lg">Quick Links</p>
               {["Home", "About Us", "Services", "FAQ's"].map((l) => (
-                <a key={l} href="#" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                <a key={l} href={l === "Services" ? "#services" : l === "FAQ's" ? "#faq" : l === "About Us" ? "#cta" : "#"} className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
                   {l}
                 </a>
               ))}
@@ -37,21 +44,23 @@ export default function Footer() {
             {/* Legal */}
             <div className="flex flex-col gap-4 min-w-[120px]">
               <p className="font-bold text-base sm:text-lg">Legal</p>
-              {["Contact Us", "Terms & Conditions"].map((l) => (
-                <a key={l} href="#" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
-                  {l}
-                </a>
-              ))}
+
+              <a href="/terms" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                Terms of Use & Privacy Policy
+              </a>
+              <a href="/waiver" className="text-white/70 text-xs sm:text-sm hover:text-white transition-colors">
+                Waiver of Liability
+              </a>
             </div>
 
             {/* Get in touch */}
             <div className="flex flex-col gap-4 min-w-[120px] col-span-2 lg:col-span-1">
               <p className="font-bold text-base sm:text-lg">Get in touch</p>
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3 text-white/70 text-xs sm:text-sm">
-                  <Image src="/location.png" alt="Location" width={20} height={20} className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
-                  <span>Houston, Texas</span>
-                </div>
+                <a href="mailto:support@conzultos.com" className="flex items-center gap-3 text-white/70 text-xs sm:text-sm hover:text-white transition-colors cursor-pointer">
+                  <Image src="/emails.png" alt="Email" width={20} height={20} className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
+                  <span>support@conzultos.com</span>
+                </a>
               </div>
             </div>
           </div>

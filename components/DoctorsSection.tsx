@@ -100,7 +100,7 @@ export default function DoctorsSection() {
         <div className="hidden md:flex gap-3">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-black/10 hover:border-black/20 bg-white flex items-center justify-center hover:bg-gray-50 transition-colors shadow-sm cursor-pointer"
+            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-black/10 hover:border-black/20 bg-white flex items-center justify-center hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-200 shadow-sm cursor-pointer"
             aria-label="Previous slide"
           >
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#0a0a1a]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function DoctorsSection() {
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-black/10 hover:border-black/20 bg-white flex items-center justify-center hover:bg-gray-50 transition-colors shadow-sm cursor-pointer"
+            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-black/10 hover:border-black/20 bg-white flex items-center justify-center hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-200 shadow-sm cursor-pointer"
             aria-label="Next slide"
           >
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#0a0a1a]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -119,7 +119,9 @@ export default function DoctorsSection() {
         </div>
 
         <div className="flex justify-center">
-          <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer">
+            <PrimaryButton>Book a Physician Advisor Today</PrimaryButton>
+          </a>
         </div>
       </div>
     </section>

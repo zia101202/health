@@ -16,21 +16,25 @@ export default function Navbar() {
           {links.map((l) => (
             <a
               key={l}
-              href="#"
+              href={l === "Services" ? "#services" : l === "FAQ" ? "#faq" : l === "About Us" ? "#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "#"}
+              {...(l === "Become an Expert" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className={`text-white text-sm hover:text-[#4f8fff] transition-colors ${l === "Become an Expert" ? "font-semibold underline decoration-solid underline-offset-4" : "font-normal"
                 }`}
             >
               {l}
             </a>
           ))}
-          <button
-            className="w-[125px] h-[47px] py-[14px] px-9 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 transition-colors flex items-center justify-center shrink-0"
+          <a
+            href="https://app.conzultos.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-auto h-[47px] py-[14px] px-6 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center shrink-0"
           >
             Sign in
-          </button>
+          </a>
         </div>
         {/* Mobile hamburger */}
-        <button className="lg:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="lg:hidden text-white hover:scale-110 active:scale-95 transition-transform duration-200 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -43,15 +47,23 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden bg-[#0a0a1a] border-t border-white/10 px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
-            <a key={l} href="#" className="text-white text-sm hover:text-[#4f8fff] transition-colors">
+            <a
+              key={l}
+              href={l === "Services" ? "#services" : l === "FAQ" ? "#faq" : l === "About Us" ? "#cta" : l === "Become an Expert" ? "https://www.doctors.conzultos.com/" : "#"}
+              {...(l === "Become an Expert" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className="text-white text-sm hover:text-[#4f8fff] transition-colors"
+            >
               {l}
             </a>
           ))}
-          <button
-            className="w-[125px] h-[47px] py-[14px] px-9 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 transition-colors flex items-center justify-center shrink-0"
+          <a
+            href="https://app.conzultos.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-auto h-[47px] py-[14px] px-6 gap-3 text-white bg-white/10 backdrop-blur-md font-semibold text-sm rounded-[60px] border border-white/30 hover:bg-white/25 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center shrink-0"
           >
             Sign in
-          </button>
+          </a>
         </div>
       )}
     </nav>

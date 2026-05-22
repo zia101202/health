@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <section
+    <section id="cta"
       className="relative overflow-hidden py-14 sm:py-20 px-4 sm:px-6 md:px-[60px]"
       style={{
         background:
@@ -23,9 +23,9 @@ export default function CTASection() {
           information, prepare better questions, and navigate the next conversation with more confidence.
         </p>
 
-        <button className="bg-white text-[#3260ec] font-semibold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-[14px] rounded-[60px] hover:bg-white/90 transition-colors whitespace-nowrap shadow-sm shrink-0">
+        <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer" className="bg-white text-[#3260ec] font-semibold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-[14px] rounded-[60px] hover:bg-white/90 hover:scale-105 active:scale-95 transition-all duration-200 whitespace-nowrap shadow-sm shrink-0 cursor-pointer">
           Book a Physician Advisory Call
-        </button>
+        </a>
 
         <div
           className="bg-[rgba(255,255,255,0.06)] border border-white/20 backdrop-blur-sm rounded-[12px] sm:rounded-[16px] flex items-center justify-center py-2.5 sm:py-3 px-4 sm:px-6 w-full"

@@ -60,9 +60,9 @@ export default function BeforeNextAppointment() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 w-full sm:w-auto">
-          <button className="bg-[#3260ec] text-white font-semibold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-[14px] rounded-[60px] hover:bg-[#2550d4] transition-colors whitespace-nowrap shadow-sm">
+          <a href="https://app.conzultos.com/register-client?consultant=cmlhd2i150004ny01t2a6iabi" target="_blank" rel="noopener noreferrer" className="bg-[#3260ec] text-white font-semibold text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-[14px] rounded-[60px] hover:bg-[#2550d4] hover:scale-105 active:scale-95 transition-all duration-200 whitespace-nowrap shadow-sm cursor-pointer">
             Book a Physician Advisor Today
-          </button>
+          </a>
 
         </div>
       </div>

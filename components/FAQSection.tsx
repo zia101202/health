@@ -17,7 +17,7 @@ const FAQS = [
 export default function FAQSection() {
   const [open, setOpen] = useState(0);
   return (
-    <section className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
+    <section id="faq" className="bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6">
       <div className="max-w-[1012px] mx-auto flex flex-col gap-6 sm:gap-10">
         <h2 className="text-[#0a0a1a]  text-[31px] max-w-[544px] mx-auto text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-center">
           What other <span className="text-[#3260ec]">clients have</span> asked us...
@@ -26,7 +26,7 @@ export default function FAQSection() {
           {FAQS.map(({ q, a }, i) => (
             <div key={i} className="bg-[#f5f5f5] rounded-[14px] sm:rounded-[20px] px-4 sm:px-6 md:px-8 overflow-hidden transition-all duration-200">
               <button
-                className="w-full flex items-center justify-between py-4 sm:py-6 gap-3 sm:gap-4 text-left"
+                className="w-full flex items-center justify-between py-4 sm:py-6 px-2 sm:px-0 gap-3 sm:gap-4 text-left hover:opacity-70 transition-opacity duration-200 cursor-pointer"
                 onClick={() => setOpen(open === i ? -1 : i)}
               >
                 <div className="flex items-center gap-2 sm:gap-4">
