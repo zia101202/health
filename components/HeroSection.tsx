@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PrimaryButton } from "./ui/buttons";
 import Navbar from "./Navbar";
 
@@ -84,7 +85,7 @@ export default function HeroSection() {
           ].map(({ icon, title, desc }) => (
             <div key={title} className="flex flex-col items-center gap-2 sm:gap-3 text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={icon} alt={title} className="w-8 h-8 sm:w-10 sm:h-10" />
+              <Image src={icon} alt={title} width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" loading="eager" />
               <span className="text-white font-bold text-base sm:text-lg tracking-tight">{title}</span>
               <p className="text-white/70 font-['Inter',sans-serif] font-normal text-[14px] leading-[20px] tracking-[0] text-center">
                 {desc}

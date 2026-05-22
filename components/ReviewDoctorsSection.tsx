@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PrimaryButton } from "./ui/buttons";
 
 export default function ReviewDoctorsSection() {
@@ -27,11 +28,15 @@ export default function ReviewDoctorsSection() {
 
         {/* Right graphic */}
         <div className="w-full lg:w-[603px] flex items-center justify-center mt-8 sm:mt-12 lg:mt-0">
-          <img
-            src="/review.png"
-            alt="Review doctor profile example"
-            className="w-full h-full object-contain rounded-2xl select-none"
-          />
+          <div className="relative w-full aspect-[603/480] rounded-2xl overflow-hidden select-none">
+            <Image
+              src="/review.png"
+              alt="Review doctor profile example"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 603px"
+            />
+          </div>
         </div>
       </div>
     </section>

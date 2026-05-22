@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { OutlineButton } from "./ui/buttons";
 
 export default function Footer() {
@@ -7,16 +8,14 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-start gap-10 sm:gap-14 lg:gap-24 xl:gap-32 pb-8 sm:pb-12 border-b border-white/10">
           {/* Brand — left */}
           <div className="flex flex-col gap-4 w-full sm:max-w-[280px] shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/navlogo.png" alt="Conzultos" style={{ width: "147.5px", height: "41px" }} />
+            <Image src="/navlogo.png" alt="Conzultos" width={148} height={41} style={{ width: "147.5px", height: "41px" }} />
             <p className="text-white/70 sm:max-w-[280px] text-xs sm:text-sm leading-relaxed">
               Connecting people with trusted healthcare experts through simple, meaningful conversations.
             </p>
             <div className="flex gap-3">
               {["/facebook.png", "/tiktok.png", "/instagram.png", "/youtube.png"].map((src, i) => (
                 <a key={i} href="#" className="w-5 h-5 sm:w-6 sm:h-6 hover:opacity-70 transition-opacity">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt="" className="w-full h-full object-contain" />
+                  <Image src={src} alt="" width={24} height={24} className="w-full h-full object-contain" />
                 </a>
               ))}
             </div>
@@ -50,8 +49,7 @@ export default function Footer() {
               <p className="font-bold text-base sm:text-lg">Get in touch</p>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3 text-white/70 text-xs sm:text-sm">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/location.png" alt="Location" className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
+                  <Image src="/location.png" alt="Location" width={20} height={20} className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
                   <span>Houston, Texas</span>
                 </div>
               </div>

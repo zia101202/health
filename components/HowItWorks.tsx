@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HOW_STEPS = [
   {
     step: "1. Choose a physician advisor",
@@ -31,13 +33,16 @@ export default function HowItWorks() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center lg:justify-items-stretch">
           {HOW_STEPS.map(({ step, desc, image }) => (
             <div key={step} className="flex flex-col gap-4 sm:gap-5 w-full max-w-[321px] lg:max-w-none lg:min-w-[321px]">
-              <img
+              <Image
                 src={image}
                 alt={step}
+                width={321}
+                height={354}
                 className="w-full max-w-[321px] h-[354px] lg:w-[321px] lg:min-w-[321px] lg:min-h-[354px] lg:h-[354px] shrink-0 select-none object-cover rounded-[20px] mx-auto lg:mx-0"
+                sizes="(max-width: 640px) 100vw, 321px"
               />
               <div>
-                <p className="text-[#0a0a1a] font-bold text-base sm:text-lg tracking-tight mb-1">{step}</p>
+                <p className="text-[#0a0a1a] font-hanken font-semibold text-[18px] leading-none mb-1" style={{ letterSpacing: '-0.04em' }}>{step}</p>
                 <p className="text-[#555] font-['Inter',sans-serif] font-normal text-[14px] sm:text-[16px] leading-[21px] sm:leading-[23px]" style={{ letterSpacing: '-1%' }}>{desc}</p>
               </div>
             </div>

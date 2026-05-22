@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { PrimaryButton } from "./ui/buttons";
 
 const DOCTORS = [
@@ -29,11 +30,15 @@ const DOCTORS = [
 function DoctorCard({ name, specialty, image }: { name: string; specialty: string; image: string }) {
   return (
     <div className="w-[240px] sm:w-[280px] md:w-[315px] shrink-0 snap-start flex flex-col gap-3 sm:gap-4">
-      <img
-        src={image}
-        alt={name}
-        className="w-full aspect-square rounded-2xl object-cover select-none"
-      />
+      <div className="relative w-full aspect-square rounded-2xl overflow-hidden select-none">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 240px, (max-width: 768px) 280px, 315px"
+        />
+      </div>
       <div>
         <h3
           className="text-[#0a0a1a] text-[18px] sm:text-[20px] md:text-[24px] font-semibold font-hanken leading-none mb-1"

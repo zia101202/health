@@ -18,7 +18,7 @@ import Footer from "@/components/Footer";
 
 export default function ConzultosMedical() {
   return (
-    <div className="min-h-screen font-sans antialiased">
+    <main className="min-h-screen font-sans antialiased">
       <AnnouncementBar />
       <HeroSection />
       <HowItWorks />
@@ -37,6 +37,6 @@ export default function ConzultosMedical() {
       <FAQSection />
       <CTASection />
       <Footer />
-    </div>
+    </main>
   );
 }

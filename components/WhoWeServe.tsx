@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PrimaryButton } from "./ui/buttons";
 
 const WHO_DATA = [
@@ -44,7 +45,7 @@ export default function WhoWeServe() {
               key={i}
               className={`flex flex-col md:flex-row ${side === "left" ? "md:flex-row-reverse" : ""} items-center gap-6 sm:gap-8 lg:gap-10`}
             >
-              <div className="flex-1 w-full flex flex-col gap-4 sm:gap-5 order-2 md:order-none">
+              <div className="w-full md:flex-1 flex flex-col gap-4 sm:gap-5 order-2 md:order-none">
                 <h3 className="text-[#0a0a1a] text-xl text-[28px] sm:text-2xl md:text-3xl lg:text-[36px] font-semibold leading-[1.1] tracking-tight">
                   {title}
                 </h3>
@@ -60,11 +61,16 @@ export default function WhoWeServe() {
               </div>
 
               <div
-                className={`flex-1 w-full relative h-[220px] sm:h-[280px] md:h-[350px] rounded-[16px] sm:rounded-[24px] overflow-hidden transform transition-transform order-1 md:order-none ${side === "left" ? "lg:translate-x-0" : "lg:-translate-x-24"
+                className={`w-full md:flex-1 relative h-[220px] sm:h-[280px] md:h-[350px] shrink-0 rounded-[16px] sm:rounded-[24px] overflow-hidden transform transition-transform order-1 md:order-none ${side === "left" ? "lg:translate-x-0" : "lg:-translate-x-24"
                   }`}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={image} alt="Conzultos family" className="w-full h-full object-cover" />
+                <Image
+                  src={image}
+                  alt="Conzultos family"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           ))}

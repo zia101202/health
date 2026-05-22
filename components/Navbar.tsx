@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -9,8 +10,7 @@ export default function Navbar() {
   return (
     <nav className="relative z-50 w-full pt-4">
       <div className="max-w-[1320px] mx-auto px-6 h-[70px] flex items-center justify-between">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" alt="Conzultos" className="h-[45px] w-auto" />
+        <Image src="/logo.png" alt="Conzultos" height={45} width={180} style={{ height: "45px", width: "auto" }} />
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
