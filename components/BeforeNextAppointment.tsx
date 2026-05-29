@@ -1,18 +1,4 @@
-"use client";
-
-import { useState, useRef } from "react";
-
 export default function BeforeNextAppointment() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handlePlay = () => {
-    setIsPlaying(true);
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
   return (
     <section className="bg-white py-14 sm:py-20 px-4 sm:px-6">
       <div className="w-full lg:max-w-[1261px] mx-auto bg-[#f4f6fb] rounded-[20px] sm:rounded-[30px] py-8 sm:py-[40px] lg:py-[60px] px-4 sm:px-6 lg:px-[80px] flex flex-col items-center gap-6 sm:gap-[40px]">
@@ -28,31 +14,14 @@ export default function BeforeNextAppointment() {
         {/* Video Player */}
         <div className="relative w-full min-w-[300px] min-h-[170px] max-w-[1052px] aspect-[1052/445] lg:w-[1052px] lg:min-w-[1052px] lg:h-[445px] lg:min-h-[445px] lg:aspect-auto shrink-0 rounded-xl sm:rounded-3xl overflow-hidden bg-[#d0d7e5] shadow-inner group border border-transparent">
           <video
-            ref={videoRef}
-            src="https://assets.mixkit.co/videos/preview/mixkit-doctor-working-on-his-computer-at-the-clinic-40810-large.mp4"
+            src="/video.mp4"
             className="w-full h-full object-cover"
-            controls={isPlaying}
+            autoPlay
+            muted
+            controls
             playsInline
             loop
           />
-
-          {/* Custom Play Overlay */}
-          {!isPlaying && (
-            <button
-              onClick={handlePlay}
-              className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors group cursor-pointer"
-            >
-              <div className="w-14 h-14 sm:w-20 sm:h-20 bg-white/25 hover:bg-white/35 backdrop-blur-sm rounded-full flex items-center justify-center transition-all transform hover:scale-105">
-                <svg
-                  className="w-7 h-7 sm:w-10 sm:h-10 text-white translate-x-[2px]"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </button>
-          )}
         </div>
 
         {/* Descriptive Text */}
