@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://health-npkp.vercel.app',
+      url: 'https://medadvisor.conzultos.com',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,

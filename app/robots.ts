@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://health-npkp.vercel.app/sitemap.xml',
+    sitemap: 'https://medadvisor.conzultos.com/sitemap.xml',
   };
 }
