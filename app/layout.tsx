@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://health-npkp.vercel.app"),
   title: {
     template: "%s | Conzultos",
     default: "Conzultos - Medical Family Advisory",
@@ -37,14 +38,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Conzultos - Medical Family Advisory",
     description: "Get expert medical guidance for you and your family.",
-    url: "https://conzultos.com",
+    url: "https://health-npkp.vercel.app",
     siteName: "Conzultos",
     images: [
       {
-        url: "/hero.png",
+        url: "https://health-npkp.vercel.app/hero.png",
         width: 1200,
         height: 630,
         alt: "Conzultos Medical Advisory",
+        type: "image/png",
       },
     ],
     locale: "en_US",
@@ -54,7 +56,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Conzultos - Medical Family Advisory",
     description: "Connect with experienced physician advisors for non-clinical guidance.",
-    images: ["/hero.png"],
+    images: ["https://health-npkp.vercel.app/hero.png"],
+  },
+  icons: {
+    icon: "/favicon-light.png",
+    shortcut: "/favicon-light.png",
+    apple: "/favicon-light.png",
   },
   robots: {
     index: true,
@@ -66,6 +73,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  other: {
+    "og:image:secure_url": "https://health-npkp.vercel.app/hero.png",
   },
 };
 

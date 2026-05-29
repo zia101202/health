@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://conzultos.com/sitemap.xml',
+    sitemap: 'https://health-npkp.vercel.app/sitemap.xml',
   };
 }
