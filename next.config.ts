@@ -2,11 +2,15 @@ import path from "path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: path.join(__dirname),
-  },
+  output: 'export',
+  trailingSlash: true,
   images: {
-    qualities: [75, 90],
+    unoptimized: true,
+  },
+  reactStrictMode: true,
+  // Avoid walking up to e.g. C:\Users\<user>\package.json (BOM / wrong lockfile breaks resolve)
+  turbopack: {
+    root: __dirname,
   },
 };
 
